@@ -1,6 +1,16 @@
 import React from 'react';
-function Todo(){ return(
-<div style={{textAlign: 'center', marginTop:'50px'}}>
-  <h1>Welcome to My To Do App</h1>
-</div>);}
-export default Todo;
+import TaskCard from "./components/TaskCard";
+function App(){ return(
+<div className="App">
+  <h1>Tasks</h1>
+<TaskCard 
+title="Exercise coding"
+dueDate="2027-04-06"
+description="complete frontend"
+priority=" mandatory"/>
+<TaskCard 
+title="Physical training"
+dueDate="2027-04-06"
+description="every morning"
+priority=" Twice a day"/></div>);}
+export default App;
